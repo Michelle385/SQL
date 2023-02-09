@@ -1,0 +1,191 @@
+#In this SQL code, I am querying  a database that is holding Harry Potter data to answer questions about the books and characters. 
+
+CREATE TABLE Harry_Potter_Characters (id INTEGER PRIMARY KEY AUTOINCREMENT, first_name TEXT, last_name TEXT, blood_type TEXT);
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Harry", "Potter", "half_blood");
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Hermione", "Granger", "muggle_born"); 
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Ron", "Weasley", "pure_blood"); 
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Lord", "Voldemort", "half_blood"); 
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Albus", "Dumbledore", "half_blood"); 
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Draco", "Malfoy", "pure_blood");
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Luna", "Lovegood", "pure_blood");
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Severus", "Snape", "half_blood");
+INSERT INTO Harry_Potter_Characters (first_name, last_name, blood_type)
+VALUES ("Cedric", "Diggory", "pure_blood");
+
+CREATE TABLE houses (id INTEGER PRIMARY KEY, character_id INTEGER, house TEXT);
+INSERT INTO Houses (character_id, house)
+VALUES (1, "Gryffindor");
+INSERT INTO Houses (character_id, house)
+VALUES (2, "Gryffindor");
+INSERT INTO Houses (character_id, house)
+VALUES (3, "Gryffindor");
+INSERT INTO Houses (character_id, house)
+VALUES (4, "Slytherin");
+INSERT INTO Houses (character_id, house)
+VALUES (5, "Gryffindor");
+INSERT INTO Houses (character_id, house)
+VALUES (6, "Slytherin");
+INSERT INTO Houses (character_id, house)
+VALUES (7, "Ravenclaw");
+INSERT INTO Houses (character_id, house)
+VALUES (8, "Slytherin");
+INSERT INTO Houses (character_id, house)
+VALUES (9, "Hufflepuff");
+
+
+CREATE TABLE Books (id INTEGER PRIMARY KEY, character_id INTEGER, book_title TEXT);
+INSERT INTO Books (character_id, book_title)
+VALUES (1,"Sorcerer's_Stone");
+INSERT INTO Books (character_id, book_title)
+VALUES (2,"Sorcerer's_Stone");
+INSERT INTO Books (character_id, book_title)
+VALUES (3,"Sorcerer's_Stone");
+INSERT INTO Books (character_id, book_title)
+VALUES (4,"Sorcerer's_Stone");
+INSERT INTO Books (character_id, book_title)
+VALUES (5,"Sorcerer's_Stone");
+INSERT INTO Books (character_id, book_title)
+VALUES (6,"Sorcerer's_Stone");
+INSERT INTO Books (character_id, book_title)
+VALUES (8,"Sorcerer's_Stone");
+INSERT INTO Books (character_id, book_title)
+VALUES (1,"Chamber_of_Secrets");
+INSERT INTO Books (character_id, book_title)
+VALUES (2,"Chamber_of_Secrets");
+INSERT INTO Books (character_id, book_title)
+VALUES (3,"Chamber_of_Secrets");
+INSERT INTO Books (character_id, book_title)
+VALUES (4,"Chamber_of_Secrets");
+INSERT INTO Books (character_id, book_title)
+VALUES (5,"Chamber_of_Secrets");
+INSERT INTO Books (character_id, book_title)
+VALUES (6,"Chamber_of_Secrets");
+INSERT INTO Books (character_id, book_title)
+VALUES (8,"Chamber_of_Secrets");
+INSERT INTO Books (character_id, book_title)
+VALUES (1,"Prisoner_of_Azkaban");
+INSERT INTO Books (character_id, book_title)
+VALUES (2,"Prisoner_of_Azkaban");
+INSERT INTO Books (character_id, book_title)
+VALUES (3,"Prisoner_of_Azkaban");
+INSERT INTO Books (character_id, book_title)
+VALUES (4,"Prisoner_of_Azkaban");
+INSERT INTO Books (character_id, book_title)
+VALUES (5,"Prisoner_of_Azkaban");
+INSERT INTO Books (character_id, book_title)
+VALUES (6,"Prisoner_of_Azkaban");
+INSERT INTO Books (character_id, book_title)
+VALUES (8,"Prisoner_of_Azkaban");
+INSERT INTO Books (character_id, book_title)
+VALUES (1, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (2, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (3, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (4, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (5, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (6, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (8, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (9, "Goblet_of_Fire");
+INSERT INTO Books (character_id, book_title)
+VALUES (1,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (2,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (3,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (4,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (5,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (6,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (7,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (8,"Order_of_the_Phoenix");
+INSERT INTO Books (character_id, book_title)
+VALUES (1,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (2,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (3,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (4,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (5,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (6,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (7,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (8,"Half_Blood_Prince");
+INSERT INTO Books (character_id, book_title)
+VALUES (1, "Deathy_Hallows");
+INSERT INTO Books (character_id, book_title)
+VALUES (2, "Deathy_Hallows");
+INSERT INTO Books (character_id, book_title)
+VALUES (3, "Deathy_Hallows");
+INSERT INTO Books (character_id, book_title)
+VALUES (4, "Deathy_Hallows");
+INSERT INTO Books (character_id, book_title)
+VALUES (5, "Deathy_Hallows");
+INSERT INTO Books (character_id, book_title)
+VALUES (6, "Deathy_Hallows");
+INSERT INTO Books (character_id, book_title)
+VALUES (7, "Deathy_Hallows");
+INSERT INTO Books (character_id, book_title)
+VALUES (8, "Deathy_Hallows");
+
+
+
+#/*cross join*/
+SELECT * FROM Harry_Potter_Characters, houses;
+
+#/*implicit inner join*/
+SELECT * FROM Harry_Potter_Characters, houses
+    WHERE houses.character_id= Harry_Potter_Characters.id;
+    
+#/*explicit inner join-JOIN*/
+SELECT * FROM Harry_Potter_Characters
+     JOIN houses
+     ON Harry_Potter_Characters.id=houses.character_id;
+     
+#1. What house is each character in?
+
+SELECT Harry_Potter_Characters.first_name, Harry_Potter_Characters.last_name, houses.house 
+     FROM Harry_Potter_Characters
+     JOIN houses
+     ON Harry_Potter_Characters.id=houses.character_id;
+     
+#2. Which characters appear in each book?
+     
+SELECT Harry_Potter_Characters.first_name, Harry_Potter_Characters.last_name, Books.book_title
+     FROM Harry_Potter_Characters
+     JOIN Books
+     ON Harry_Potter_Characters.id=Books.character_id;
+ 
+ #3. Which blood-type of wizard appears in each house?
+     
+SELECT Harry_Potter_Characters.blood_type, houses.house
+     FROM Harry_Potter_Characters
+     JOIN houses
+     ON Harry_Potter_Characters.id=houses.character_id;
+     
+/*outer join*/     
+     SELECT Harry_Potter_Characters.first_name, Harry_Potter_Characters.last_name, Books.book_title
+     FROM Harry_Potter_Characters
+     LEFT OUTER JOIN Books
+     ON Harry_Potter_Characters.id=Books.character_id;

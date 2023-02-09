@@ -1,0 +1,31 @@
+--Create a clothing store database 
+
+CREATE TABLE clothing_store (id INTEGER, item text, quantity INTEGER, price INTEGER, description text);
+
+INSERT INTO clothing_store VALUES (1, "shirt", 5, 25, "white");
+INSERT INTO clothing_store VALUES (2, "pants", 5, 35, "jeans");
+INSERT INTO clothing_store VALUES (3, "shorts", 5, 20, "cargo");
+INSERT INTO clothing_store VALUES (4, "shoes", 5, 45, "sandals");
+INSERT INTO clothing_store VALUES (5, "skirts", 6, 15, "short");
+INSERT INTO clothing_store VALUES (6, "hats", 25, 10, "top hat");
+INSERT INTO clothing_store VALUES (7, "necklace", 5, 15, "gold");
+INSERT INTO clothing_store VALUES (8, "bracelet", 5, 15, "silver");
+INSERT INTO clothing_store VALUES (9, "tank top", 15, 5, "black");
+INSERT INTO clothing_store VALUES (10, "socks", 10, 5, "ankle");
+INSERT INTO clothing_store VALUES (11, "earings", 10, 15, "diamond");
+INSERT INTO clothing_store VALUES (12, "capris", 20, 25, "high-rise");
+INSERT INTO clothing_store VALUES (13, "sweater", 25, 40, "winter");
+INSERT INTO clothing_store VALUES (14, "sweatshirt", 25, 45, "hoodie");
+INSERT INTO clothing_store VALUES (15, "pajamas", 10, 25, "fleece");
+
+--What is the total quantity of all items?
+SELECT SUM(quantity) FROM clothing_store;
+
+--display the database ordered by price. 
+SELECT * FROM clothing_store ORDER BY price;
+
+--What is the total number of items soted by items?
+SELECT item, SUM(quantity) FROM clothing_store GROUP BY item;
+
+--What is the max amount of items sorted by items?
+SELECT item, MAX(quantity) FROM clothing_store GROUP BY item;
